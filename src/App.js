@@ -2,7 +2,7 @@ import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Root from './Components/Root/Root';
 import Home from './Components/Home/Home';
-import Blog from './Components/Home/Blog/Blog';
+import Blog from './Components/Blog/Blog';
 import Statistics from './Components/Statistics/Statistics';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
 
@@ -14,7 +14,9 @@ function App() {
       errorElement: <ErrorPage></ErrorPage>,
       children: [
         { path: '/', element: <Home></Home> },
-        { path: '/home', element: <Home></Home> },
+        { path: '/home',
+          loader: ()=> fetch('https://openapi.programming-hero.com/api/quiz'),
+          element: <Home></Home> },
         { path: '/statistics', element: <Statistics></Statistics> },
         { path: '/blog', element: <Blog></Blog> },
       ]
