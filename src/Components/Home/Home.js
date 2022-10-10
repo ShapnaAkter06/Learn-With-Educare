@@ -5,7 +5,7 @@ import Course from '../Course/Course';
 
 const Home = () => {
     const courses = useLoaderData();
-    console.log(courses.data);
+    // console.log(courses.data);
     return (
         <div className='md:flex md:flex-col w-full h-full bg-center bg-no-repeat' style={{ backgroundImage: `url(${banner})` }}>
             <div>
