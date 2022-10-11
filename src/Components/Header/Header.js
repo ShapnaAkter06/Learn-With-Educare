@@ -9,7 +9,7 @@ const Header = () => {
                 <h2 className='text-2xl font-bold'>Learn with Educare</h2>
                 <ul className='md:flex justify-center gap-4 text-blue-900 font-semibold'>
                     <li>
-                        <NavLink to='/home'>Home</NavLink>
+                        <NavLink to='/'>Home</NavLink>
                     </li>
                     <li>
                         <NavLink to='/statistics'>Statistics</NavLink>

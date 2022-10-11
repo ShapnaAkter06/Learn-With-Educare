@@ -11,7 +11,7 @@ const Quiz = () => {
             <h2 className='text-2xl font-bold'>Quiz Of {name}</h2>
             <div className='grid md:grid-cols-1 gap-4 p-8'>
                 {
-                    questions.map(quiz => <Question quiz={quiz} key={quiz.id}></Question>)
+                    questions.map(quiz =>  <Question quiz={quiz} key={quiz.id}></Question>)
                 }
             </div>
         </div>
