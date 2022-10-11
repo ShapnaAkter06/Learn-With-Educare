@@ -13,7 +13,7 @@ const Home = () => {
                 <p className='max-w-xl mx-auto my-4'>Master your language with lessons, quizzes, and projects designed for real-life scenarios. Create portfolio projects that showcase your new skills to help land your dream job.</p>
             </div>
             <div >
-                <div className='grid md:grid-cols-2 gap-4 p-8'>
+                <div className='grid md:grid-cols-2 gap-4 md:p-8'>
                     {
                         courses.data.map(course => <Course 
                             key={course.id} 
