@@ -8,7 +8,7 @@ const Statistics = () => {
     // console.log(totalChart);
     return (
         <div className='max-w-xl mx-auto my-4'>
-        <LineChart width={500} height={400} data={data.data}>
+        <LineChart width={400} height={400} data={data.data}>
             <Line type="monotone" dataKey="total" stroke="#82ca9d" />
             <XAxis dataKey="name" />
             <YAxis />
