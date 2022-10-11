@@ -13,7 +13,7 @@ const Course = ({ course }) => {
             <p className='text-1xl font-medium'>Total Question: {total} </p>
             <Link to={`/quiz/${id}`}>
                 <button
-                    className='px-8 mb-4 mt-4 py-3 font-semibold rounded-full bg-sky-300 text-gray-800 hover:bg-cyan-400'
+                    className='px-8 mb-4 mt-4 py-2 font-semibold rounded-full bg-sky-300 text-gray-800 hover:bg-cyan-400'
                 >Start Practice</button>
             </Link>
             </div>
