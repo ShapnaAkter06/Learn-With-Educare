@@ -38,7 +38,7 @@ const Header = () => {
                             className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
                         >
                             <li>
-                                <NavLink to={"/"}>Topics</NavLink>
+                                <NavLink to={"/"}>Home</NavLink>
                             </li>
                             <li className="mt-2">
                                 <NavLink to={"/statistics"}>Statistics</NavLink>

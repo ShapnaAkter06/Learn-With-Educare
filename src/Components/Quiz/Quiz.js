@@ -8,8 +8,8 @@ const Quiz = () => {
     const {name, questions} = getQuiz.data
     return (
         <div>
-            <h2 className='text-2xl font-bold'>Quiz Of {name}</h2>
-            <div className='grid md:grid-cols-1 gap-4 p-8'>
+            <h2 className='text-2xl font-bold mt-4'>Quiz Of {name}</h2>
+            <div className='grid md:grid-cols-1 gap-8 p-8'>
                 {
                     questions.map(quiz =>  <Question quiz={quiz} key={quiz.id}></Question>)
                 }
