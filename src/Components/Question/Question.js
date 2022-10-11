@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Question = ({ quiz }) => {
@@ -25,13 +25,13 @@ const Question = ({ quiz }) => {
 
     return (
         <div className='bg-gray-200 shadow-lg p-4'>
-            <div className='flex justify-between'>
-                <h2>Question : {question} </h2>
+            <div className='flex justify-end'>
                 <FontAwesomeIcon onClick={showRightAns} className='text-dark' icon={faEye}></FontAwesomeIcon>
             </div>
+            <h2 className='text-1xl font-medium text-gray-900'>Question : {question} </h2>
             <div className='grid md:grid-cols-1'>
                 {
-                    options.map(option => <label>
+                    options.map(option => <label className='m-1'>
                         <input onClick={() => getCorrectAnswer(correctAnswer, option)} type="radio" name="clicked" id="" />
                         {option}</label>)
                 }
