@@ -31,8 +31,8 @@ const Question = ({ quiz }) => {
             </div>
             <div className='grid md:grid-cols-1'>
                 {
-                    options.map(option => <label onClick={() => getCorrectAnswer(correctAnswer, option)}>
-                        <input type="radio" name="clicked" id="" />
+                    options.map(option => <label>
+                        <input onClick={() => getCorrectAnswer(correctAnswer, option)} type="radio" name="clicked" id="" />
                         {option}</label>)
                 }
             </div>
