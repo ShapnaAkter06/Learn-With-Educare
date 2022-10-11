@@ -9,8 +9,8 @@ const Question = ({ quiz }) => {
     const { question, options, correctAnswer } = quiz;
 
     // Show Right and wrong Answer
-    const getCorrectAnswer = (a, b) => {
-        if (a == b) {
+    const getCorrectAnswer = (correctAnswer, option) => {
+        if (correctAnswer == option) {
             toast.success('You have selected right ans', {autoClose: 500, position: 'top-center'})
         }
         else {
@@ -28,7 +28,7 @@ const Question = ({ quiz }) => {
             <div className='flex justify-end'>
                 <FontAwesomeIcon onClick={showRightAns} className='text-dark' icon={faEye}></FontAwesomeIcon>
             </div>
-            <h2 className='text-2xl font-medium text-gray-900 mb-4'>{question} </h2>
+            <h2 className='text-2xl font-medium text-gray-900 mb-4'>Quiz : {question} </h2>
             <div className='grid md:grid-cols-2'>
                 {
                     options.map((option, index) => <label className='m-1 bg-white py-2 rounded-md ' key={index}>
