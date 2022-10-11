@@ -14,7 +14,6 @@ function App() {
       element: <Root></Root>,
       errorElement: <ErrorPage></ErrorPage>,
       children: [
-        // { path: '/', element: <Home></Home> },
         {
           path: '/',
           loader: async () => {

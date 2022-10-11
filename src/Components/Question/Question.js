@@ -31,7 +31,7 @@ const Question = ({ quiz }) => {
             <h2 className='text-1xl font-medium text-gray-900'>Question : {question} </h2>
             <div className='grid md:grid-cols-1'>
                 {
-                    options.map(option => <label className='m-1'>
+                    options.map((option, index) => <label className='m-1' key={index}>
                         <input onClick={() => getCorrectAnswer(correctAnswer, option)} type="radio" name="clicked" id="" />
                         {option}</label>)
                 }

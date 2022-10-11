@@ -3,9 +3,9 @@ import { useLoaderData } from 'react-router-dom';
 import Question from '../Question/Question';
 
 const Quiz = () => {
-    const quiz = useLoaderData();
-    // console.log(quiz);
-    const {name, questions} = quiz.data
+    const getQuiz = useLoaderData();
+    // console.log(getQuiz.data);
+    const {name, questions} = getQuiz.data
     return (
         <div>
             <h2 className='text-2xl font-bold'>Quiz Of {name}</h2>
