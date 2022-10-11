@@ -7,8 +7,8 @@ const Statistics = () => {
     const data = useLoaderData();
     // console.log(totalChart);
     return (
-        <div className='h-screen bg-white flex items-center justify-center w-full'>
-        <LineChart width={500} height={400} data={data.data}>
+        <div className=' bg-white flex items-center justify-center'>
+        <LineChart width={350} height={400} data={data.data}>
             <Line type="monotone" dataKey="total" stroke="#82ca9d" />
             <XAxis dataKey="name" />
             <YAxis />
