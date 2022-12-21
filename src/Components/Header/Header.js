@@ -7,7 +7,6 @@ import './Header.css'
 const Header = () => {
     return (
         <div className="container mx-auto">
-            hello
             <div className="navbar bg-gradient-to-r from-sky-300 to-fuchsia-300 rounded-md z-10">
                 <div className="flex-1">
                     <a className="btn btn-ghost normal-case text-2xl font-bold text-gray-900">
