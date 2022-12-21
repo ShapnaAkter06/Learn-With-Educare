@@ -1,7 +1,7 @@
 import { faList } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Header.css'
 
 const Header = () => {
@@ -9,9 +9,9 @@ const Header = () => {
         <div className="container mx-auto">
             <div className="navbar bg-gradient-to-r from-sky-300 to-fuchsia-300 rounded-md z-10">
                 <div className="flex-1">
-                    <a className="btn btn-ghost normal-case text-2xl font-bold text-gray-900">
+                    <Link className="btn btn-ghost normal-case text-2xl font-bold text-gray-900">
                         Learn with Educare
-                    </a>
+                    </Link>
                 </div>
                 <div className="flex-none gap-2">
                     <div className="flex-none  hidden sm:block">
